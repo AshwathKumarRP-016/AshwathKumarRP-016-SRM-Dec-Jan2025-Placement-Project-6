@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interest Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .formula {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Simple Interest Calculator</h2>
+        <form action="calculate" method="POST">
+            <label>Principal (P):</label>
+            <input type="number" name="principal" placeholder="Enter amount" required>
+            
+            <label>Rate (R):</label>
+            <input type="number" name="rate" placeholder="Enter rate %" required>
+            
+            <label>Time (T):</label>
+            <input type="number" name="time" placeholder="Enter years" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="formula">Formula: SI = (P × R × T) / 100</div>
+    </div>
+</body>
+</html>
